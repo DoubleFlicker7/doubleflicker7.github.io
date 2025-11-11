@@ -18,6 +18,9 @@ url                      : https://doubleflicker7.github.io # The base hostname 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "DoubleFlicker7/doubleflicker7.github.io"
 
+host: localhost
+port: 4000
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html

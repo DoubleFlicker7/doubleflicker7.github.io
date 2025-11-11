@@ -16,10 +16,10 @@ Nice to meet you! I'm a Ph.D student in Computer Science and Technology at [Inst
 
 ## 🍕News
 
-- 11/2025: 📍 I’m becoming a Ph.D. student at ***ICT, UCAS***.
-- 02/2024: 🎉 One paper is accepted by CVPR 2024.
-- 09/2023: 📍 I’m joining ***ICT, UCAS*** as a M.S. student.
-- 06/2023: 🏅 I obtained the B.E degree from ***UPC***.
+- **[11/2025]** 📍 I’m becoming a Ph.D. student at ***ICT, UCAS***.
+- **[02/2024]** 🎉 One paper is accepted by CVPR 2024.
+- **[09/2023]** 📍 I’m joining ***ICT, UCAS*** as a M.S. student.
+- **[06/2023]** 🏅 I obtained the B.E degree from ***UPC***.
 
 ## 🍔Publications
 
