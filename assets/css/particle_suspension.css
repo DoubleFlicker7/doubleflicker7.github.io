@@ -1,0 +1,9 @@
+.particle-canvas {
+    position: fixed;     /* fix to the screen*/
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;  /* Do not block click events */
+    /*z-index: -1;            Put it after all the content */
+}

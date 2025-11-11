@@ -16,7 +16,7 @@ body {
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
   // font-family: $global-font-family;
-  font-family: "Trebuchet MS";
+  font-family: Georgia, "Times New Roman", serif;
   line-height: 2.0;
 
   &.overflow--hidden {
@@ -25,11 +25,35 @@ body {
   }
 }
 
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #666;
+}
+
+a:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #0056b3;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+  color: #0c4994 !important;
 }
 
 h1 {

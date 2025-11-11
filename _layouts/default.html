@@ -9,12 +9,14 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/particle_suspension.css' | relative_url }}">
   </head>
 
   <body>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+    <canvas id="demo-canvas" class="particle-canvas"></canvas>
 
     {{ content }}
 
@@ -26,6 +28,9 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
+  <script src="{{ '/assets/js/particle_suspension.js' | relative_url }}"></script>
 
   </body>
 </html>
