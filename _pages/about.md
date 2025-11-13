@@ -27,9 +27,9 @@ waiting...
 
 ## 🌭 Education
 
- - **09/2023 - Now**, Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China.
- - **09/2019 - 06/2023**, China University of Petroleum (Huadong), Qingdao, Shandong.
- - **09/2016 - 06/2019**, Zhoushan Putuo high school, Zhoushan, Zhejiang.
+ - **09/2023 - Now**, **<span style="color: #b7282e;">Ph.D</span>**, Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China.
+ - **09/2019 - 06/2023**, **<span style="color: #0c4994;">Bachelor</span>**, China University of Petroleum (Huadong), Qingdao, Shandong.
+ - **09/2016 - 06/2019**, Zhoushan Putuo High school, Zhoushan, Zhejiang.
 
 
 
