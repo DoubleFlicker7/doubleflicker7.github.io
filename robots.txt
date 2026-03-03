@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://doubleflicker7.github.io/sitemap.xml
