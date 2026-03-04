@@ -29,11 +29,15 @@
       <div class="sidebar-block">
         <div class="sidebar-title">TL;DR</div>
         <div class="sidebar-block">
-          <img
+          {% comment %} <img
             class="sidebar-img"
             src="{{ page.profile.motto_img | prepend: 'assets/img/' | relative_url }}"
             alt="motto icon"
-          />
+          /> {% endcomment %}
+          <div class="sidebar-motto-img">
+            {% capture motto_icon_path %}motto/{{ page.profile.motto_img }}{% endcapture %}
+            {% include {{ motto_icon_path }} %}
+          </div>
         </div>
       </div>
     {% endif %}
@@ -50,12 +54,10 @@
               {% if href contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
               aria-label="{{ item.label }}"
               title="{{ item.label }}">
-              {% case item.icon %}
-                {% when "Email.svg" %}{% include links/Email.svg %}
-                {% when "GitHub.svg" %}{% include links/GitHub.svg %}
-                {% when "Google_Scholar.svg" %}{% include links/Google_Scholar.svg %}
-                {% when "Hugging_Face.svg" %}{% include links/Hugging_Face.svg %}
-              {% endcase %}
+              {% if item.icon %}
+                {% capture icon_path %}links/{{ item.icon }}{% endcapture %}
+                {% include {{ icon_path }} %}
+              {% endif %}
             </a>
           {% endfor %}
         </div>

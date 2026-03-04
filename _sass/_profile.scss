@@ -53,11 +53,13 @@
   font-size: 0.95rem;
 }
 
-.sidebar-img{
+.sidebar-motto-img{
   width: 100%;
   height: auto;
   display: block;
   margin-top: .5rem;
+  color: var(--global-text-color);
+  transition: color 0.2s ease;
 }
 
 .sidebar-links{
@@ -69,13 +71,13 @@
 }
 
 .sidebar-link{
-  flex: 0 0 calc((100% - 5 * .6rem) / 6);  /* 6列；扣掉5个gap */
+  flex: 0 0 calc((100% - 5 * .6rem) / 6);
   max-width: calc((100% - 5 * .6rem) / 6);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  height: 34px;              /* 按你喜好 */
+  height: 34px;
   border-radius: 10px;
   text-decoration: none;
 
