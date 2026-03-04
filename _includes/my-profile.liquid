@@ -1,0 +1,66 @@
+{%- comment -%} _includes/author-profile-left.liquid {%- endcomment -%}
+
+<aside class="about-sidebar">
+  {% if page.profile.image %}
+    {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+    {% if page.profile.image_circular %}
+      {% assign profile_image_class = 'about-avatar z-depth-1 is-circle' %}
+    {% else %}
+      {% assign profile_image_class = 'about-avatar z-depth-1' %}
+    {% endif %}
+
+    {% capture sizes %}(min-width: {{ site.max_width }}) 260px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+    {% include figure.liquid
+        loading="eager"
+        path=profile_image_path
+        class=profile_image_class
+        sizes=sizes
+        alt=page.profile.image
+        cache_bust=true %}
+  {% endif %}
+
+    {% comment %} {% if page.profile.more_info %}
+      <div class="about-sidebar-info">
+        {{ page.profile.more_info }}
+      </div>
+    {% endif %} {% endcomment %}
+
+    {% if page.profile.show_motto %}
+      <div class="sidebar-block">
+        <div class="sidebar-title">TL;DR</div>
+        <div class="sidebar-block">
+          <img
+            class="sidebar-img"
+            src="{{ page.profile.motto_img | prepend: 'assets/img/' | relative_url }}"
+            alt="motto icon"
+          />
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.profile.show_sidebar_links %}
+      <div class="sidebar-block">
+        <div class="sidebar-title">Links</div>
+
+        <div class="sidebar-links">
+          {% for item in site.data.sidebar_links %}
+            {%- assign href = item.url -%}
+            <a class="sidebar-link"
+              href="{% if href contains '://' or href contains 'mailto:' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}"
+              {% if href contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
+              aria-label="{{ item.label }}"
+              title="{{ item.label }}">
+              {% case item.icon %}
+                {% when "Email.svg" %}{% include links/Email.svg %}
+                {% when "GitHub.svg" %}{% include links/GitHub.svg %}
+                {% when "Google_Scholar.svg" %}{% include links/Google_Scholar.svg %}
+                {% when "Hugging_Face.svg" %}{% include links/Hugging_Face.svg %}
+              {% endcase %}
+            </a>
+          {% endfor %}
+        </div>
+
+      </div>
+    {% endif %}
+
+</aside>

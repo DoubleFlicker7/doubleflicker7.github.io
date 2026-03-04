@@ -1,0 +1,16 @@
+- label: Email
+  url: "mailto:yourname@domain.com"
+  icon: Email.svg
+
+- label: GitHub
+  url: "https://github.com/yourname"
+  icon: GitHub.svg
+
+- label: Google Scholar
+  url: "https://scholar.google.com/citations?user=XXXX"
+  icon: Google_Scholar.svg
+
+- label: Hugging Face
+  url: "https://scholar.google.com/citations?user=XXXX"
+  icon: Hugging_Face.svg
+
