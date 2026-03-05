@@ -2073,13 +2073,6 @@ a.close.disabled {
     }
 }
 
-@media print {
-
-    .d-print-inline {
-        display: inline !important
-    }
-}
-
 .flex-column {
     -ms-flex-direction: column !important;
     flex-direction: column !important
