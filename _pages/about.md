@@ -4,7 +4,7 @@ title: About
 permalink: /
 subtitle: <p><strong>Ph.D. Student</strong></p>
           <p><strong>Institute of Computing Technology, University of Chinese Academy of Sciences</strong></p>
-          <p><strong>6 Xueyue South Road, Haidian, Beijing. (100190)</strong></p>
+          <p><strong>6 Xueyuan South Road, Haidian, Beijing. (100190)</strong></p>
 
 profile:
   image: my_profile_900x900.png
@@ -22,9 +22,14 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+educations:
+  enabled: true
+  scrollable: true 
+  limit: 3 
 ---
 
 Nice to meet you! I'm a Ph.D student in Computer Science and Technology at [Institute of Computing Technology (ICT)](http://www.ict.cas.cn/), [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.ac.cn/), I mainly engage in research in the field of Computer Vision. I obtained a B.E degree in Electronic Information Engineering from [China University of Petroleum (UPC)](https://www.upc.edu.cn/) in 2023. I am now advised by Professor [Feng Dai](http://www.ict.ac.cn/sourcedb/cn/jssrck/201404/t20140422_4096774.html) and Senior Engineer [Yike Ma](http://www.ict.ac.cn/sourcedb/cn/jssrck/201511/t20151119_4470413.html).

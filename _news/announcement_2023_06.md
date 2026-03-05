@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🏅 I obtained the B.E degree from ***UPC***.
+🏅 I obtained the B.E degree from **UPC**.

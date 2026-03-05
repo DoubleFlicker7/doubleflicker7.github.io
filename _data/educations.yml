@@ -1,0 +1,13 @@
+- degree: "Ph.D., Computer Science"
+  school: "Institute of Computing Technology, Chinese Academy of Sciences"
+  location: "Beijing, China"
+  start: "2023"
+  end: "Now"
+  logo: "/assets/img/logos/ucas.svg"
+
+- degree: "B.Eng., Electronic Information Engineering"
+  school: "China University of Petroleum (East China)"
+  location: "Qingdao, China"
+  start: "2019"
+  end: "2023"
+  logo: "/assets/img/logos/upc.svg"

@@ -17,14 +17,14 @@ layout: default
       </h1>
       <p class="desc">{{ page.subtitle }}</p>
     </header>
-    <br><br>
 
     <article>
       {{ content }}
 
       <!-- News -->
       {% if page.announcements and page.announcements.enabled %}
-        <h2>
+        <h2 class="about-section-title about-section-title--news"
+            style="--about-title-icon: url('{{ '/assets/img/icons/fire.svg' | relative_url }}');">
           <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
         </h2>
         {% include news.liquid limit=true %}
@@ -32,7 +32,8 @@ layout: default
 
       <!-- Latest posts -->
       {% if page.latest_posts and page.latest_posts.enabled %}
-        <h2>
+        <h2 class="about-section-title about-section-title--posts"
+            style="--about-title-icon: url('{{ '/assets/img/icons/fire.svg' | relative_url }}');">
           <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
         </h2>
         {% include latest_posts.liquid %}
@@ -40,10 +41,20 @@ layout: default
 
       <!-- Selected papers -->
       {% if page.selected_papers %}
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+        <h2 class="about-section-title about-section-title--pubs"
+            style="--about-title-icon: url('{{ '/assets/img/icons/publication.svg' | relative_url }}');">
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
         </h2>
         {% include selected_papers.liquid %}
+      {% endif %}
+
+      <!-- Educations -->
+      {% if page.educations %}
+        <h2 class="about-section-title about-section-title--edus"
+            style="--about-title-icon: url('{{ '/assets/img/icons/education.svg' | relative_url }}');">
+          Educations
+        </h2>
+        {% include educations.liquid %}
       {% endif %}
 
       <!-- Social -->

@@ -1,3 +1,4 @@
+/* avatar */
 .about-grid {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -28,7 +29,7 @@
   .about-sidebar { position: static; }
 }
 
-
+/* sidebar */
 .sidebar-block { margin-top: 1rem; }
 
 .sidebar-title{
@@ -93,3 +94,40 @@
   height: 20px;
   display: block;
 }
+
+/* sections */
+.about-main .about-section-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45em;
+  position: relative;
+  padding-bottom: 0.35rem;
+  margin-bottom: 1.1rem;
+}
+
+.about-main .about-section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.15;
+}
+
+
+.about-main .about-section-title::before{
+  content:"";
+  width:0.90em;
+  height:0.90em;
+  background: currentColor;
+  -webkit-mask-image: var(--about-title-icon);
+  mask-image: var(--about-title-icon);
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-position:center; mask-position:center;
+  -webkit-mask-size:contain; mask-size:contain;
+  flex:0 0 auto;
+  transform: translateY(0.08em);
+}
+

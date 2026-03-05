@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📍 I’m joining ***ICT, UCAS*** as a M.S. student.
+📍 I’m joining **ICT, UCAS** as a M.S. student.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📍 I’m becoming a Ph.D. student at ***ICT, UCAS***.
+📍 I’m becoming a Ph.D. student at **ICT, UCAS**.
