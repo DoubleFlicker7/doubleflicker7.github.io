@@ -1,16 +1,24 @@
 - label: Email
-  url: "mailto:yourname@domain.com"
+  url: "mailto:xuhaonan23s@ict.ac.cn"
   icon: Email.svg
 
+- label: Orcid
+  url: "https://orcid.org/0009-0002-5052-2934"
+  icon: Orcid.svg
+
 - label: GitHub
-  url: "https://github.com/yourname"
+  url: "https://github.com/DoubleFlicker7"
   icon: GitHub.svg
 
 - label: Google Scholar
-  url: "https://scholar.google.com/citations?user=XXXX"
+  url: "https://scholar.google.com.hk/citations?user=Up_a2VAAAAAJ&hl=zh-CN"
   icon: Google_Scholar.svg
 
 - label: Hugging Face
-  url: "https://scholar.google.com/citations?user=XXXX"
+  url: "https://huggingface.co/DoubleFlicker"
   icon: Hugging_Face.svg
+
+- label: Steam
+  url: "https://steamcommunity.com/id/doubleflicker7"
+  icon: Steam.svg
 

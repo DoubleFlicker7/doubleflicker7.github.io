@@ -53,11 +53,13 @@
   font-size: 0.95rem;
 }
 
-.sidebar-img{
+.sidebar-motto-img{
   width: 100%;
   height: auto;
   display: block;
   margin-top: .5rem;
+  color: var(--global-text-color);
+  transition: color 0.2s ease;
 }
 
 .sidebar-links{
