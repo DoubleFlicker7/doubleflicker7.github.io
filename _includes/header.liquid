@@ -19,6 +19,12 @@
           {% else %}
             {{- site.title -}}
           {% endif %}
+
+          {% comment %} <div class="nav-logo">
+            {% capture logo_path %}{{ site.icon }}{% endcapture %}
+            {% include {{ logo_path }} %}
+          </div> {% endcomment %}
+
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
