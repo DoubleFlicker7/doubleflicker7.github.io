@@ -4,7 +4,7 @@ title: About
 permalink: /
 subtitle: <p><strong>Ph.D. Student</strong></p>
           <p><strong>Institute of Computing Technology, University of Chinese Academy of Sciences</strong></p>
-          <p><strong>6 Xueyuan South Road, Haidian, Beijing. (100190)</strong></p>
+          <p><strong>No. 6, South Academy Road, Haidian, Beijing. (100190)</strong></p>
 
 profile:
   image: my_profile_900x900.png
