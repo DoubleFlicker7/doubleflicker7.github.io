@@ -166,6 +166,22 @@
         transition: all 0.15s ease;
       }
 
+      .bibtex.hidden,
+      .bibtex.hidden.open {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .bibtex.hidden pre {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        margin: 0;
+      }
+
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
       }
@@ -187,3 +203,4 @@
 .citation-number {
   color: var(--global-theme-color);
 }
+
