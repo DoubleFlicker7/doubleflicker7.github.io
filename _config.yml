@@ -316,6 +316,7 @@ filtered_bibtex_keywords:
   [
     abbr,
     abstract,
+    abstract_file,
     additional_info,
     altmetric,
     annotation,
@@ -330,6 +331,8 @@ filtered_bibtex_keywords:
     google_scholar_id,
     hal,
     html,
+    url,
+    doi,
     inspirehep_id,
     pdf,
     pmid,
@@ -340,6 +343,7 @@ filtered_bibtex_keywords:
     supp,
     video,
     website,
+    location,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
