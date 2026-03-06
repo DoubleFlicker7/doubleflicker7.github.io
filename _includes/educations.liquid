@@ -4,25 +4,28 @@
       <div class="education-head">
         <div class="education-left">
           {% if edu.logo %}
-            <img class="education-logo"
-                 src="{{ edu.logo | relative_url }}"
-                 alt="{{ edu.school }} logo"
-                 loading="lazy">
+            <img
+              class="education-logo"
+              src="{{ edu.logo | relative_url }}"
+              alt="{{ edu.school }} logo"
+              loading="lazy"
+            >
           {% endif %}
 
           <div class="education-text">
             <div class="education-degree">{{ edu.degree }}</div>
             <div class="education-school">
-              {{ edu.school }}{% if edu.location %}, {{ edu.location }}{% endif %}
+              {{ edu.school -}}
+              {%- if edu.location %}, {{ edu.location }}{% endif %}
             </div>
           </div>
         </div>
 
         <div class="education-dates">
-          {% if edu.start %}{{ edu.start }}{% endif %}{% if edu.end %} – {{ edu.end }}{% endif %}
+          {% if edu.start %}{{ edu.start }}{% endif -%}
+          {%- if edu.end %} – {{ edu.end }}{% endif %}
         </div>
       </div>
-
     </div>
   {% endfor %}
 </div>

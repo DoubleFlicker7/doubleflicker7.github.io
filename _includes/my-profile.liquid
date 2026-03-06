@@ -10,59 +10,67 @@
     {% endif %}
 
     {% capture sizes %}(min-width: {{ site.max_width }}) 260px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-    {% include figure.liquid
-        loading="eager"
-        path=profile_image_path
-        class=profile_image_class
-        sizes=sizes
-        alt=page.profile.image
-        cache_bust=true %}
+    {%
+      include figure.liquid
+      loading="eager"
+      path=profile_image_path
+      class=profile_image_class
+      sizes=sizes
+      alt=page.profile.image
+      cache_bust=true
+    %}
   {% endif %}
 
-    {% comment %} {% if page.profile.more_info %}
+  {% comment %}
+    {% if page.profile.more_info %}
       <div class="about-sidebar-info">
         {{ page.profile.more_info }}
       </div>
-    {% endif %} {% endcomment %}
-
-    {% if page.profile.show_sidebar_links %}
-      <div class="sidebar-block">
-        <div class="sidebar-title">Links</div>
-
-        <div class="sidebar-links">
-          {% for item in site.data.sidebar_links %}
-            {%- assign href = item.url -%}
-            <a class="sidebar-link"
-              href="{% if href contains '://' or href contains 'mailto:' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}"
-              {% if href contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
-              aria-label="{{ item.label }}"
-              title="{{ item.label }}">
-              {% if item.icon %}
-                {% capture icon_path %}links/{{ item.icon }}{% endcapture %}
-                {% include {{ icon_path }} %}
-              {% endif %}
-            </a>
-          {% endfor %}
-        </div>
-
-      </div>
     {% endif %}
+  {% endcomment %}
 
-    {% if page.profile.show_motto %}
+  {% if page.profile.show_sidebar_links %}
+    <div class="sidebar-block">
+      <div class="sidebar-title">Links</div>
+
+      <div class="sidebar-links">
+        {% for item in site.data.sidebar_links %}
+          {%- assign href = item.url -%}
+          <a
+            class="sidebar-link"
+            href="{% if href contains '://' or href contains 'mailto:' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}"
+            {% if href contains '://' %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
+            aria-label="{{ item.label }}"
+            title="{{ item.label }}"
+          >
+            {% if item.icon %}
+              {% capture icon_path %}links/{{ item.icon }}{% endcapture %}
+              {% include {{ icon_path }} %}
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.profile.show_motto %}
+    <div class="sidebar-block">
+      <div class="sidebar-title">TL;DR</div>
       <div class="sidebar-block">
-        <div class="sidebar-title">TL;DR</div>
-        <div class="sidebar-block">
-          {% comment %} <img
+        {% comment %}
+          <img
             class="sidebar-img"
             src="{{ page.profile.motto_img | prepend: 'assets/img/' | relative_url }}"
             alt="motto icon"
-          /> {% endcomment %}
-          <div class="sidebar-motto-img">
-            {% capture motto_icon_path %}motto/{{ page.profile.motto_img }}{% endcapture %}
-            {% include {{ motto_icon_path }} %}
-          </div>
+          />
+        {% endcomment %}
+        <div class="sidebar-motto-img">
+          {% capture motto_icon_path %}motto/{{ page.profile.motto_img }}{% endcapture %}
+          {% include {{ motto_icon_path }} %}
         </div>
       </div>
-    {% endif %}
-
+    </div>
+  {% endif %}
 </aside>
