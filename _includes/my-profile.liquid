@@ -25,23 +25,6 @@
       </div>
     {% endif %} {% endcomment %}
 
-    {% if page.profile.show_motto %}
-      <div class="sidebar-block">
-        <div class="sidebar-title">TL;DR</div>
-        <div class="sidebar-block">
-          {% comment %} <img
-            class="sidebar-img"
-            src="{{ page.profile.motto_img | prepend: 'assets/img/' | relative_url }}"
-            alt="motto icon"
-          /> {% endcomment %}
-          <div class="sidebar-motto-img">
-            {% capture motto_icon_path %}motto/{{ page.profile.motto_img }}{% endcapture %}
-            {% include {{ motto_icon_path }} %}
-          </div>
-        </div>
-      </div>
-    {% endif %}
-
     {% if page.profile.show_sidebar_links %}
       <div class="sidebar-block">
         <div class="sidebar-title">Links</div>
@@ -62,6 +45,23 @@
           {% endfor %}
         </div>
 
+      </div>
+    {% endif %}
+
+    {% if page.profile.show_motto %}
+      <div class="sidebar-block">
+        <div class="sidebar-title">TL;DR</div>
+        <div class="sidebar-block">
+          {% comment %} <img
+            class="sidebar-img"
+            src="{{ page.profile.motto_img | prepend: 'assets/img/' | relative_url }}"
+            alt="motto icon"
+          /> {% endcomment %}
+          <div class="sidebar-motto-img">
+            {% capture motto_icon_path %}motto/{{ page.profile.motto_img }}{% endcapture %}
+            {% include {{ motto_icon_path }} %}
+          </div>
+        </div>
       </div>
     {% endif %}
 
