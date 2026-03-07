@@ -128,9 +128,9 @@
           padding-right: 0.5rem;
           vertical-align: middle;
 
-          &:hover {
-            text-decoration: underline;
-          }
+          // &:hover {
+          //   text-decoration: underline;
+          // }
         }
       }
 
@@ -202,4 +202,32 @@
 .citation,
 .citation-number {
   color: var(--global-theme-color);
+}
+
+.ccf-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid #969696;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin-right: 0.4rem;
+}
+
+.ccf-badge.ccf-a {
+  color: #b22222 !important;
+}
+
+.ccf-badge.ccf-b {
+  color: #1f6feb !important;
+}
+
+.ccf-badge.ccf-c {
+  color: #2da44e !important;
 }

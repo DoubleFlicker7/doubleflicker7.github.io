@@ -279,8 +279,22 @@
       {% if entry.inspirehep_id %}
         {% assign entry_has_inspirehep_badge = true %}
       {% endif %}
-      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
+
+      {% assign entry_has_ccf_badge = false %}
+      {% if entry.ccf %}
+        {% assign entry_has_ccf_badge = true %}
+      {% endif %}
+
+      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge or entry_has_ccf_badge%}
         <div class="badges">
+          {% if entry_has_ccf_badge %}
+            <span
+              class="ccf-badge ccf-{{ entry.ccf | downcase | replace: '+', '' | replace: '-', '' }}"
+              aria-label="CCF rank"
+            >
+              CCF-{{ entry.ccf }}
+            </span>
+          {% endif %}
           {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
             <span
               class="altmetric-embed"
