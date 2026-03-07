@@ -52,7 +52,10 @@ layout: default
         >
           <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
         </h2>
-        {% include selected_papers.liquid %}
+
+        {% include selected_papers.liquid title="Conference" category="conference" icon="fa-solid fa-people-group" %}
+        {% include selected_papers.liquid title="Journal" category="journal" icon="fa-solid fa-flask" %}
+        {% include selected_papers.liquid title="Preprint" category="preprint" icon="fa-solid fa-rocket" %}
       {% endif %}
 
       <!-- Educations -->

@@ -1,3 +1,23 @@
-<div class="publications">
-  {% bibliography --group_by none --query @*[selected=true]* %}
-</div>
+{% capture section_pubs %}
+  {% if include.category %}
+    {% bibliography --group_by none --query @*[selected=true && category={{ include.category }}]* %}
+  {% else %}
+    {% bibliography --group_by none --query @*[selected=true]* %}
+  {% endif %}
+{% endcapture %}
+
+{% if section_pubs contains '<li' %}
+  {% if include.title %}
+    {% if include.title %}
+      <h3 class="publication-subsection-title">
+        {% if include.icon %}
+          <i class="{{ include.icon }}"></i>
+        {% endif %}
+        <span>{{ include.title }}</span>
+      </h3>
+    {% endif %}
+  {% endif %}
+  <div class="publications">
+    {{ section_pubs }}
+  </div>
+{% endif %}
