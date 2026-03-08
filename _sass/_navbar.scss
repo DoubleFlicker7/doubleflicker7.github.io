@@ -11,6 +11,28 @@
   opacity: 0.9;
 }
 
+.navbar .navbar-brand {
+  color: var(--global-text-color);
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar .site-logo {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: currentColor;
+
+  -webkit-mask-image: var(--site-logo-url);
+  mask-image: var(--site-logo-url);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
   background-color: var(--global-bg-color);

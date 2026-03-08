@@ -45,10 +45,19 @@
             aria-label="{{ item.label }}"
             title="{{ item.label }}"
           >
-            {% if item.icon %}
+            {% comment %} {% if item.icon %}
               {% capture icon_path %}links/{{ item.icon }}{% endcapture %}
               {% include {{ icon_path }} %}
+            {% endif %} {% endcomment %}
+
+            {% if item.icon %}
+              <span
+                class="link-icon"
+                style="--link-icon-url: url('{{ '/assets/img/links/' | append: item.icon | relative_url }}');"
+                aria-hidden="true"
+              ></span>
             {% endif %}
+            
           </a>
         {% endfor %}
       </div>

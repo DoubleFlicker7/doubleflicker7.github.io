@@ -392,7 +392,7 @@
       <div class="abstract hidden">
         {% if entry.abstract_file %}
           {% capture abs_include %}abstracts/{{ entry.abstract_file }}{% endcapture %}
-          {% include {{ abs_include }} %}
+          <p>{% include {{ abs_include }} %}</p>
         {% else %}
           <p>{{ entry.abstract }}</p>
         {% endif %}

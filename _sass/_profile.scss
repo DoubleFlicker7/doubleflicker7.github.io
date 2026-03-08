@@ -93,14 +93,24 @@
   color: var(--global-text-color);
 }
 
-.sidebar-link:hover {
+.link-icon:hover {
   color: var(--global-theme-color);
 }
 
 .sidebar-link .link-icon {
-  width: 20px;
-  height: 20px;
-  display: block;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-color: currentColor;
+
+  -webkit-mask-image: var(--link-icon-url);
+  mask-image: var(--link-icon-url);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
 /* sections */
@@ -114,6 +124,7 @@
   margin-bottom: 1.1rem;
   border-bottom: 1px solid rgba(127, 127, 127, 0.28);
 }
+
 
 .about-main .about-section-title::before {
   content: "";
