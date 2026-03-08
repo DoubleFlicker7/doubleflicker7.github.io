@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -68,13 +68,17 @@
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 700;
+      }
+
+      .paper-meta {
+        font-size: 0.875rem;
       }
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
-
+          // border-bottom: 1px dashed var(--global-theme-color);
+          color: var(--global-text-color);
           &:hover {
             border-bottom-style: solid;
             text-decoration: none;
@@ -125,7 +129,7 @@
           color: v.$black-color;
           height: 100%;
           padding-right: 0.5rem;
-          // vertical-align: middle;
+          vertical-align: middle;
 
           // &:hover {
           //   text-decoration: underline;
@@ -209,36 +213,18 @@
   color: var(--global-theme-color);
 }
 
-// .ccf-badge {
-//   display: inline-flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 30px;
-//   padding: 0.2rem 0.7rem;
-//   border-radius: 4px;
-//   font-size: 0.72rem;
-//   font-weight: 700;
-//   line-height: 1;
-//   border: 1px solid #969696;
-//   white-space: nowrap;
-//   box-sizing: border-box;
-//   margin-right: 0.4rem;
-// }
-
-.ccf-badge {
-  // padding: 0.2rem 0.7rem;
-  align-items: center;
-  justify-content: center;
+.ccf-a {
+  // color: #B8860B !important;
+  background-color: #b8870b2c;
+  border-color: #b8860b !important;
 }
 
-.ccf-badge.ccf-a {
-  color: #B8860B !important;
+.ccf-b {
+  background-color: #6e7b8b2b;
+  border-color: #6e7b8b !important;
 }
 
-.ccf-badge.ccf-b {
-  color: #6E7B8B !important;
-}
-
-.ccf-badge.ccf-c {
-  color: #8C4A2F !important;
+.ccf-c {
+  background-color: #8c492f32;
+  border-color: #8c4a2f !important;
 }

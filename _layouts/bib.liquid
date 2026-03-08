@@ -50,7 +50,7 @@
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
-    <div class="author">
+    <div class="author paper-meta">
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
@@ -152,11 +152,11 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% capture entrytype %}<em class="paper-meta">{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% capture entrytype %}<em class="paper-meta">In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+      {% capture entrytype %}<em class="paper-meta">{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -180,15 +180,18 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
+    <div class="periodical paper-meta">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
+    <div class="periodical paper-meta">
       {{ entry.note | strip }}
     </div>
 
     <!-- Links/Buttons -->
     <div class="links">
+      {% if entry.ccf %}
+        <a class="ccf btn btn-sm z-depth-0 ccf-{{ entry.ccf | downcase }}" role="button"> CCF-{{ entry.ccf | upcase }} </a>
+      {% endif %}
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
@@ -280,26 +283,8 @@
         {% assign entry_has_inspirehep_badge = true %}
       {% endif %}
 
-      {% assign entry_has_ccf_badge = false %}
-      {% if entry.ccf %}
-        {% assign entry_has_ccf_badge = true %}
-      {% endif %}
-
-      {% if entry_has_altmetric_badge
-        or entry_has_dimensions_badge
-        or entry_has_google_scholar_badge
-        or entry_has_inspirehep_badge
-        or entry_has_ccf_badge
-      %}
+      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
         <div class="badges">
-          {% if entry_has_ccf_badge %}
-            <span
-              class="ccf-badge ccf-{{ entry.ccf | downcase | replace: '+', '' | replace: '-', '' }}"
-              aria-label="CCF rank"
-            >
-              CCF-{{ entry.ccf }}
-            </span>
-          {% endif %}
           {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
             <span
               class="altmetric-embed"
