@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
 subtitle: <p><strong>Ph.D. Student</strong></p>
   <p><strong>Institute of Computing Technology, University of Chinese Academy of Sciences</strong></p>

@@ -120,13 +120,12 @@
       }
 
       .badges {
-        padding-bottom: 0.5rem;
         span {
           display: inline-block;
           color: v.$black-color;
           height: 100%;
           padding-right: 0.5rem;
-          vertical-align: middle;
+          // vertical-align: middle;
 
           // &:hover {
           //   text-decoration: underline;
@@ -210,30 +209,36 @@
   color: var(--global-theme-color);
 }
 
+// .ccf-badge {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 30px;
+//   padding: 0.2rem 0.7rem;
+//   border-radius: 4px;
+//   font-size: 0.72rem;
+//   font-weight: 700;
+//   line-height: 1;
+//   border: 1px solid #969696;
+//   white-space: nowrap;
+//   box-sizing: border-box;
+//   margin-right: 0.4rem;
+// }
+
 .ccf-badge {
-  display: inline-flex;
+  // padding: 0.2rem 0.7rem;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  padding: 0.2rem 0.7rem;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1;
-  border: 1px solid #969696;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-right: 0.4rem;
 }
 
 .ccf-badge.ccf-a {
-  color: #b22222 !important;
+  color: #B8860B !important;
 }
 
 .ccf-badge.ccf-b {
-  color: #1f6feb !important;
+  color: #6E7B8B !important;
 }
 
 .ccf-badge.ccf-c {
-  color: #2da44e !important;
+  color: #8C4A2F !important;
 }
