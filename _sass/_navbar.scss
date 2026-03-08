@@ -6,9 +6,11 @@
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  // border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.9;
+  padding: 0;
+  height: 40px;
 }
 
 .navbar .navbar-brand {
@@ -43,7 +45,14 @@
   }
 
   a:hover {
+    color: var(--global-bg-color);
+    background-color: var(--global-hover-color);
+    font-weight: 800;
+  }
+
+  a.active {
     color: var(--global-hover-color);
+    font-weight: 800;
   }
 
   .dropdown-divider {
@@ -83,19 +92,22 @@
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    height: 100%;
+    text-align: center;
 
     &:hover {
-      color: var(--global-hover-color);
+      background-color: var(--global-hover-color);
+      color: var(--global-bg-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    background-color: var(--global-theme-color);
+    font-weight: 800;
+    color: var(--global-bg-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-bg-color);
     }
   }
 
@@ -209,13 +221,4 @@
   &:hover {
     color: var(--global-hover-color);
   }
-}
-
-.nav-logo {
-  height: 30px;
-  width: auto;
-  display: block;
-  margin-top: 0.5rem;
-  color: var(--global-text-color);
-  transition: color 0.2s ease;
 }
