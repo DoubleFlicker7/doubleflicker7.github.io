@@ -1977,12 +1977,6 @@ a.close.disabled {
     border-radius: .25rem !important
 }
 
-.clearfix::after {
-    display: block;
-    clear: both;
-    content: ""
-}
-
 .flex-nowrap {
     -ms-flex-wrap: nowrap !important;
     flex-wrap: nowrap !important
