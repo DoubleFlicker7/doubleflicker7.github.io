@@ -90,10 +90,17 @@
     color: var(--global-text-color);
   }
 
+  .navbar-nav .nav-item {
+    flex: 0 0 110px; // 这里改成你想要的宽度
+    width: 110px;
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
     height: 100%;
-    width: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 
     &:hover {
