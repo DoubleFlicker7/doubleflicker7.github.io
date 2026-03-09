@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 One paper is accepted by CVPR 2024.
+🎉 Our paper on oriented object detection is accepted by CVPR 2024.
