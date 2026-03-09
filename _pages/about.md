@@ -2,9 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: <p><strong>Ph.D. Student</strong></p>
-  <p><strong>Institute of Computing Technology, University of Chinese Academy of Sciences</strong></p>
-  <p><strong>No. 6, South Academy Road, Haidian, Beijing. (100190)</strong></p>
+subtitle:
 
 profile:
   image: my_profile_900x900.png
@@ -31,5 +29,16 @@ educations:
   scrollable: true
   limit: 3
 ---
+
+<p><strong>Ph.D. Student</strong></p>
+<p><strong>Institute of Computing Technology, University of Chinese Academy of Sciences</strong></p>
+<p><strong>No. 6, South Academy Road, Haidian, Beijing. (100190)</strong></p>
+<p>
+  <strong>Emails: 
+    <a href="mailto:xuhaonan23s@ict.ac.cn">xuhaonan23s@ict.ac.cn</a>,
+    <a href="mailto:eddyxu2000@gmail.com">eddyxu2000@gmail.com</a>,
+    <a href="mailto:eddyxu2000@163.com">eddyxu2000@163.com</a> 
+  </strong>
+</p>
 
 Nice to meet you! I'm now a Ph.D student in Computer Science and Technology at [Institute of Computing Technology (ICT)](http://www.ict.cas.cn/), [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.ac.cn/), I mainly engage in research in the field of Computer Vision. I obtained a B.E degree in Electronic Information Engineering from [China University of Petroleum (UPC)](https://www.upc.edu.cn/) in 2023. I am now advised by Professor [Feng Dai](http://www.ict.ac.cn/sourcedb/cn/jssrck/201404/t20140422_4096774.html) and Senior Engineer [Yike Ma](http://www.ict.ac.cn/sourcedb/cn/jssrck/201511/t20151119_4470413.html).
