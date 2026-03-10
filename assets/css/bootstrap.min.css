@@ -522,6 +522,7 @@ pre code {
 .col-md-10,
 .col-md-12,
 .col-md-2,
+.col-md-8,
 .col-sm,
 .col-sm-10,
 .col-sm-2,
@@ -601,6 +602,12 @@ pre code {
         -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%
+    }
+
+    .col-md-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
     }
 
     .col-md-10 {
