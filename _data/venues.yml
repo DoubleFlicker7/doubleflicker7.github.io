@@ -1,3 +1,7 @@
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
 "CVPR24":
   url: https://cvpr.thecvf.com/Conferences/2024
   color: "#00369f"
