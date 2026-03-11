@@ -1,0 +1,11 @@
+- name: xlogo
+  file: /assets/img/galleries/logos/xlogo.svg
+
+- name: xlogo_christmas_hat
+  file: /assets/img/galleries/logos/xlogo_christmas_hat.svg
+
+- name: xlogo_lantern
+  file: /assets/img/galleries/logos/xlogo_lantern.svg
+
+- name: xlogo_tree
+  file: /assets/img/galleries/logos/xlogo_tree.svg

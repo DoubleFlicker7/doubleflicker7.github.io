@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <!-- Head -->
+  <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
+      {% else %}
+        {% assign redirect = page.redirect | relative_url %}
+      {% endif %}
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
+    {% include head.liquid %}
+  </head>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <!-- Header -->
+    {% include header.liquid %}
+
+    <!-- Content -->
+    <div class="gallery_container mt-5" role="main">
+      <!-- Title -->
+      <div class="header-bar">
+        <h1><strong>Gallery</strong></h1>
+        <h2>The journey of the life.</h2>
+      </div>
+
+      <!-- scrollable content area -->
+      <section class="logo-marquee-section" aria-label="Gallery logos">
+        <div class="logo-marquee" id="logo-marquee">
+          <div class="logo-marquee-track" id="logo-marquee-track">
+            {% for logo in site.data.gallery_logos %}
+              <div class="logo-marquee-item">
+                <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    {% include footer.liquid %}
+
+    <!-- JavaScripts -->
+    {% include scripts.liquid %}
+  </body>
+</html>

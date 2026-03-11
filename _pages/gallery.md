@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: gallery
 permalink: /gallery/
 title: Gallery
 nav: true
