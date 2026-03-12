@@ -37,6 +37,11 @@
                 <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
               </div>
             {% endfor %}
+            {% for logo in site.data.gallery_logos %}
+              <div class="logo-marquee-item">
+                <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
+              </div>
+            {% endfor %}
           </div>
         </div>
       </section>

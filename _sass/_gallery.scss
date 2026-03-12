@@ -15,19 +15,15 @@
 }
 
 .logo-marquee {
-  width: 100%;
   overflow: hidden;
-  position: relative;
-  padding: 1rem 0;
+  width: 100%;
 }
 
 .logo-marquee-track {
   display: flex;
-  align-items: center;
-  gap: 5rem;
+  gap: 4rem;
   width: max-content;
-  will-change: transform;
-  animation: logo-loop var(--marquee-duration, 20s) linear infinite;
+  animation: marquee-test 12s linear infinite;
 }
 
 .logo-marquee-item {
@@ -35,22 +31,11 @@
 }
 
 .logo-marquee-item img {
-  display: block;
-  height: 80px;
+  height: 72px;
   width: auto;
-  max-width: 220px;
-  object-fit: contain;
 }
 
-.logo-marquee:hover .logo-marquee-track {
-  animation-play-state: paused;
-}
-
-@keyframes logo-loop {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-1 * var(--single-set-width)));
-  }
+@keyframes marquee-test {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-300px); }
 }
