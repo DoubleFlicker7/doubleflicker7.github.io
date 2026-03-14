@@ -1,0 +1,56 @@
+<section class="gallery-section-calligraphy gallery-section" aria-label="Gallery logos">
+  <div class="text-section">
+    <div class="serial-num">
+      01
+    </div>
+    <div class="section-title">
+      Calligraphy
+    </div>
+    <div class="description">
+      Seek a moment of serenity.
+    </div>
+  </div>
+  <div class="illustration-section">
+    <div class="logo-marquee" id="logo-marquee">
+      <div class="logo-marquee-track" style="--direction:normal" id="logo-marquee-track">
+        {% for logo in site.data.gallery_logos %}
+          <div 
+            class="logo-marquee-item",
+            style="--icon-url: url('{{ logo.file | relative_url }}');",
+            aria-hidden="true",
+          ></div>
+        {% endfor %}
+      </div>
+      <div aria-hidden class="logo-marquee-track" style="--direction:normal" id="logo-marquee-track">
+        {% for logo in site.data.gallery_logos %}
+          <div 
+            class="logo-marquee-item",
+            style="--icon-url: url('{{ logo.file | relative_url }}');",
+            aria-hidden="true",
+          ></div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="logo-marquee" id="logo-marquee">
+      <div class="logo-marquee-track" style="--direction:reverse;" id="logo-marquee-track">
+        {% for logo in site.data.gallery_logos %}
+          <div 
+            class="logo-marquee-item",
+            style="--icon-url: url('{{ logo.file | relative_url }}');",
+            aria-hidden="true",
+          ></div>
+        {% endfor %}
+      </div>
+      <div aria-hidden class="logo-marquee-track" style="--direction:reverse;" id="logo-marquee-track">
+        {% for logo in site.data.gallery_logos %}
+          <div 
+            class="logo-marquee-item",
+            style="--icon-url: url('{{ logo.file | relative_url }}');",
+            aria-hidden="true",
+          ></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</section>
