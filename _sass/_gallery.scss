@@ -14,43 +14,36 @@
   max-width: 100%;
 }
 
+
 .logo-marquee {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  padding: 1rem 0;
+  border: 1px solid black;
+  width: 90%;
+  margin: 1em auto;
+  display: flex;
 }
 
-.logo-marquee-track {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  width: max-content;
-  will-change: transform;
-  animation: logo-loop var(--marquee-duration, 20s) linear infinite;
-}
+// .logo-marquee-track {
+//   border: 1px solid black;
+//   width: 90%;
+//   margin: 1em auto;
+//   display: flex;
+// }
 
 .logo-marquee-item {
-  flex: 0 0 auto;
+  width: 100px;
+  height: 80px;
+  background-color: rgba(255, 0, 0, 0.212);
+  text-align: center;
+  align-content: center;
 }
 
 .logo-marquee-item img {
-  display: block;
-  height: 80px;
+  height: 72px;
   width: auto;
-  max-width: 220px;
-  object-fit: contain;
 }
 
-.logo-marquee:hover .logo-marquee-track {
-  animation-play-state: paused;
-}
-
-@keyframes logo-loop {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-1 * var(--single-set-width)));
-  }
+@keyframes scrollLeft { 
+  to { 
+    left: -100px; 
+  } 
 }
