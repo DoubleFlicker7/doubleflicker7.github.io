@@ -1,5 +1,5 @@
-- name: CEE8
-  file: /assets/img/fonts/CEE8.svg
+- name: CEE4
+  file: /assets/img/fonts/CEE4.svg
 
 - name: C1D6
   file: /assets/img/fonts/C1D6.svg
@@ -7,5 +7,5 @@
 - name: CDFB
   file: /assets/img/fonts/CDFB.svg
 
-- name: CEE4
-  file: /assets/img/fonts/CEE4.svg
+- name: CEE8
+  file: /assets/img/fonts/CEE8.svg
