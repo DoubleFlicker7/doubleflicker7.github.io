@@ -34,8 +34,10 @@
 }
 
 .gallery-section {
+  display: flex;
   margin-top: 3rem;
   border-radius: 1em;
+  height: 300px;
 }
 
 .serial-num {
