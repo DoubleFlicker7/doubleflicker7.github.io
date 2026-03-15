@@ -42,36 +42,52 @@
 
 .text-section {
   flex: 0 0 25%;
-  padding-left: 2em;
-  padding-top: 1em;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .illustration-section {
   min-width: 0;
   flex: 1;
   display: flex;
-  border-radius: 0 1em 1em 0;
-
-  flex-direction: column;
-  justify-content: flex-end;
-
+  align-items: center;
+  justify-content: flex-start;
   overflow: hidden;
+  padding: 1rem 0;
 }
 
+.marquee-section {
+  flex: 0 0 180px;
+  width: 400px;
+  height: calc(100% - 2rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  // gap: 0.75rem;
+  margin-left: 0;
+}
 
 .logo-marquee {
-  // border: 1px solid black;
-  width: 100%;
-  // margin-top: 1em;
+  flex: 1 1 0;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 18%,
+    rgba(0, 0, 0, 1) 82%,
+    rgba(0, 0, 0, 0)
+  );
   mask-image: linear-gradient(
-    to right,
-    rgba(0,0,0,0),
-    rgba(0,0,0,1) 25%,
-    rgba(0,0,0,1) 75%,
-    rgba(0,0,0,0),
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 18%,
+    rgba(0, 0, 0, 1) 82%,
+    rgba(0, 0, 0, 0)
   );
 }
 
@@ -81,20 +97,21 @@
 }
 
 .logo-marquee-track {
+  flex: 0 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1em;
-  padding-right: 1em;
+  justify-content: flex-start;
+  // gap: 1rem;
 
-  animation: scrollLeft 60s linear infinite;
+  animation: scrollVertical 60s linear infinite;
   animation-direction: var(--direction);
 }
 
 .logo-marquee-item {
-  flex: 0 0 5em;
-  width: 80px;
-  height: 80px;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
   // background-color: rgba(255, 0, 0, 0.212);
   text-align: center;
   align-content: center;
@@ -119,16 +136,11 @@
   background-color: var(--global-text-color);
 }
 
-.logo-marquee-item img {
-  height: 72px;
-  width: auto;
-}
-
-@keyframes scrollLeft { 
-  from { 
-    translate: 0; 
+@keyframes scrollVertical {
+  from {
+    transform: translateY(0);
   }
-  to { 
-    translate: -100%; 
-  } 
+  to {
+    transform: translateY(-100%);
+  }
 }
