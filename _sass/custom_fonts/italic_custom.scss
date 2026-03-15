@@ -1,0 +1,17 @@
+@use 'variables' as v;
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: v.$font-display;
+  src: url('#{v.$font-path}/CormorantGaramond-Italic-VF.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: v.$font-display;
+  src: url('#{v.$font-path}/DMSerifDisplay-Italic.woff2') format("woff2");
+}

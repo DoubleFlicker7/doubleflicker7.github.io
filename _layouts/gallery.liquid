@@ -23,50 +23,18 @@
     <!-- Content -->
     <div class="container mt-5" role="main">
       <!-- Title -->
-      <div class="header-bar">
+      <div class="gallery-header-bar">
         <h1><strong>Gallery</strong></h1>
-        <h2>The journey of the life.</h2>
+        <h2 class="title-with-line">Life sucks, but joy still.</h2>
       </div>
 
-      <!-- scrollable content area -->
-      <section class="logo-marquee-section" aria-label="Gallery logos">
-        <div class="logo-marquee" id="logo-marquee">
-          <div class="logo-marquee-track" style="--direction:normal" id="logo-marquee-track">
-            {% for logo in site.data.gallery_logos %}
-              <div class="logo-marquee-item">
-                <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
-              </div>
-            {% endfor %}
-          </div>
+      <div class="gallery-arena">
+        <!-- Calligraphy -->
+         {% include galleries/calligraphy.liquid %} 
+        <!-- Photography -->
 
-          <div aria-hidden class="logo-marquee-track" style="--direction:normal" id="logo-marquee-track">
-            {% for logo in site.data.gallery_logos %}
-              <div class="logo-marquee-item">
-                <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
-              </div>
-            {% endfor %}
-          </div>
+      </div>
 
-        </div>
-        <div class="logo-marquee" id="logo-marquee">
-          <div class="logo-marquee-track" style="--direction:reverse;" id="logo-marquee-track">
-            {% for logo in site.data.gallery_logos %}
-              <div class="logo-marquee-item">
-                <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
-              </div>
-            {% endfor %}
-          </div>
-
-          <div aria-hidden class="logo-marquee-track" style="--direction:reverse;" id="logo-marquee-track">
-            {% for logo in site.data.gallery_logos %}
-              <div class="logo-marquee-item">
-                <img src="{{ logo.file | relative_url }}" alt="{{ logo.name }}">
-              </div>
-            {% endfor %}
-          </div>
-
-        </div>
-      </section>
     </div>
 
     <!-- Footer -->
