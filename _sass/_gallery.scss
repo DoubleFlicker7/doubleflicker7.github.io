@@ -1,40 +1,61 @@
 @use "gallery/calligraphy";
 
-.header-bar {
-  border-bottom: 2px solid var(--global-divider-color);
+.gallery-header-bar {
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 3rem;
 
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
-    font-family: "DM Serif Display", serif;
+    font-family: "DMSerifDisplay", serif;
+    margin-bottom: 16px;
   }
   h2 {
-    font-family: "Source Serif 4", serif;
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 0;
   }
 }
 
+.title-with-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--global-text-color);
+}
+
+.title-with-line::before,
+.title-with-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--global-divider-color);
+}
+
 .gallery-section {
+  display: flex;
   margin-top: 3rem;
   border-radius: 1em;
+  height: 300px;
 }
 
 .serial-num {
   font-size: 1.2em;
   margin-bottom: 15px;
   font-weight: bold;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "PinyonScript", serif;
 }
 
 .section-title {
+  font-style: normal;
   font-size: 2.5em;
   font-weight: bold;
   font-family: serif;
 }
 
 .description {
-  font-size: 1em;
-  font-family: "Lora", serif;
+  font-size: 1.1em;
+  font-style: italic;
+  font-family: "Cormorant Garamond", serif;
 }

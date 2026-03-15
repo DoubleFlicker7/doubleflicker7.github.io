@@ -1,0 +1,33 @@
+@use 'variables' as v;
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: v.$font-display;
+  src: url('#{v.$font-path}/CormorantGaramond-VF.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'Adobe Song Std';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: v.$font-display;
+  src: url('#{v.$font-path}/AdobeSongStd-L.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: v.$font-display;
+  src: url('#{v.$font-path}/DMSerifDisplay-Regular.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'PinyonScript';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: v.$font-display;
+  src: url('#{v.$font-path}/PinyonScript-Regular.woff2') format("woff2");
+}
