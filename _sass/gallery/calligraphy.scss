@@ -57,7 +57,7 @@
   align-items: center;
   justify-content: flex-start;
   // gap: 0.75rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
 }
 
 .logo-marquee {
@@ -100,10 +100,34 @@
   animation-direction: var(--direction);
 }
 
+.logo-marquee-track-time {
+  margin-top: auto;
+}
+
 .logo-marquee-item {
   flex: 0 0 auto;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
+  // background-color: rgba(255, 0, 0, 0.212);
+  text-align: center;
+  align-content: center;
+  background-color: rgb(from currentColor r g b / 30%);
+  transition: background-color 0.25s ease;
+
+  -webkit-mask-image: var(--icon-url);
+  mask-image: var(--icon-url);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.logo-marquee-item-time {
+  flex: 0 0 auto;
+  width: 25px;
+  height: 25px;
   // background-color: rgba(255, 0, 0, 0.212);
   text-align: center;
   align-content: center;

@@ -1,96 +1,123 @@
-poem:
-  - column:
-    - char: CBAE  # 水
-    - char: B5F7  # 调
-    - char: B8E8  # 歌
-    - char: CDB7  # 头
-    - char: B7    # ·
-    - char: C3F7  # 明
-    - char: D4C2  # 月
-    - char: BCB8  # 几
-    - char: CAB1  # 时
-    - char: D3F0  # 有
+column1:
+  - char: CBAE  # 水
+  - char: B5F7  # 调
+  - char: B8E8  # 歌
+  - char: CDB7  # 头
 
-  - column:
-    - char: CCEC  # 天
-    - char: BDAB  # 上
-    - char: B5F6  # 琼
-    - char: C1EE  # 楼
-    - char: D2CE  # 又
-    - char: BFC6  # 恐
-    - char: C8AB  # 琼
-    - char: D3F1  # 楼
-    - char: D3F0  # 玉
-    - char: D3F1  # 宇
-    - char: B8DF  # 高
-    - char: B4E4  # 处
-    - char: B2BB  # 不
-    - char: CADC  # 胜
-    - char: BAAE  # 寒
+column2:
+  - char: C3F7  # 明
+  - char: D4C2  # 月
+  - char: BCB8  # 几
+  - char: CAB1  # 时
+  - char: D3D0  # 有
+  - char: B0D1  # 把
+  - char: BEC6  # 酒
+  - char: CECA  # 问
+  - char: C7E0  # 青
+  - char: CCEC  # 天
 
-  - column:
-    - char: CEE6  # 起
-    - char: CEE4  # 舞
-    - char: C7E0  # 弄
-    - char: C7E5  # 清
-    - char: D3B0  # 影
-    - char: BACE  # 何
-    - char: B4F4  # 似
-    - char: D4DA  # 在
-    - char: C8CB  # 人
-    - char: BCE4  # 间
+column3:
+  - char: B2BB  # 不
+  - char: D6AA  # 知
+  - char: CCEC  # 天
+  - char: C9CF  # 上
+  - char: B9AC  # 宫
+  - char: E3DA  # 阙
+  - char: BDF1  # 今
+  - char: CFA6  # 夕
+  - char: CAC7  # 是
+  - char: BACE  # 何
+  - char: C4EA  # 年
 
-  - column:
-    - char: D7AA  # 转
-    - char: D8BC  # 朱
-    - char: B8F3  # 阁
-    - char: B5E5  # 低
-    - char: C6CC  # 绮
-    - char: BBA7  # 户
-    - char: D5DC  # 照
-    - char: CEDE  # 无
-    - char: C3DF  # 眠
+column4:
+  - char: CED2  # 我
+  - char: D3FB  # 欲
+  - char: B3CB  # 乘
+  - char: B7E7  # 风
+  - char: B9E9  # 归
+  - char: C8A5  # 去
+  - char: D3D6  # 又
+  - char: BFD6  # 恐
+  - char: C7ED  # 琼
+  - char: C2A5  # 楼
+  - char: D3F1  # 玉
+  - char: D3EE  # 宇
 
-  - column:
-    - char: B2BB  # 不
-    - char: D3FB  # 应
-    - char: D3D0  # 有
-    - char: BAE3  # 恨
-    - char: BACE  # 何
-    - char: CAB1  # 事
-    - char: B3FB  # 长
-    - char: CFE2  # 向
-    - char: B1F0  # 别
-    - char: CAB1  # 时
-    - char: D4B2  # 圆
+column5:
+  - char: B8DF  # 高
+  - char: B4A6  # 处
+  - char: B2BB  # 不
+  - char: CAA4  # 胜
+  - char: BAAE  # 寒
+  - char: C6F0  # 起
+  - char: CEE8  # 舞
+  - char: C5AA  # 弄
+  - char: C7E5  # 清
+  - char: D3B0  # 影
+  - char: BACE  # 何
+  - char: CBC6  # 似
+  - char: D4DA  # 在
+  - char: C8CB  # 人
+  - char: BCE4  # 间
 
-  - column:
-    - char: C8CB  # 人
-    - char: D3EB  # 有
-    - char: B1F6  # 悲
-    - char: B9AB  # 欢
-    - char: C0EB  # 离
-    - char: BACF  # 合
-    - char: D4C2  # 月
-    - char: D3D0  # 有
-    - char: D2F6  # 阴
-    - char: C7E5  # 晴
-    - char: D4C2  # 圆
-    - char: B4F5  # 缺
-    - char: B4CE  # 此
-    - char: CAE7  # 事
-    - char: C4CF  # 古
-    - char: C4DC  # 难
-    - char: C8AB  # 全
+column6:
+  - char: D7AA  # 转
+  - char: D6EC  # 朱
+  - char: B8F3  # 阁
+  - char: B5CD  # 低
+  - char: E7B2  # 绮
+  - char: BBA7  # 户
+  - char: D5D5  # 照
+  - char: CEDE  # 无
+  - char: C3DF  # 眠
 
-  - column:
-    - char: B4BA  # 但
-    - char: D4B8  # 愿
-    - char: C8CB  # 人
-    - char: B3A4  # 长
-    - char: BEC3  # 久
-    - char: C0CB  # 千
-    - char: C0EF  # 里
-    - char: B9B2  # 共
-    - char: B2FB  # 婵
-    - char: BEFB  # 娟
+column7:
+  - char: B2BB  # 不
+  - char: D3A6  # 应
+  - char: D3D0  # 有
+  - char: BADE  # 恨
+  - char: BACE  # 何
+  - char: CAC2  # 事
+  - char: B3A4  # 长
+  - char: CFF2  # 向
+  - char: B1F0  # 别
+  - char: CAB1  # 时
+  - char: D4B2  # 圆
+
+column8:
+  - char: C8CB  # 人
+  - char: D3D0  # 有
+  - char: B1AF  # 悲
+  - char: BBB6  # 欢
+  - char: C0EB  # 离
+  - char: BACF  # 合
+  - char: D4C2  # 月
+  - char: D3D0  # 有
+  - char: D2F5  # 阴
+  - char: C7E7  # 晴
+  - char: D4B2  # 圆
+  - char: C8B1  # 缺
+  - char: B4CB  # 此
+  - char: CAC2  # 事
+  - char: B9C5  # 古
+  - char: C4D1  # 难
+  - char: C8AB  # 全
+
+column9:
+  - char: B5AB  # 但
+  - char: D4B8  # 愿
+  - char: C8CB  # 人
+  - char: B3A4  # 长
+  - char: BEC3  # 久
+  - char: C7A7  # 千
+  - char: C0EF  # 里
+  - char: B9B2  # 共
+  - char: E6BF  # 婵
+  - char: BEEA  # 娟
+  
+column10:
+  - char: CEE7  # 午
+  - char: C2ED  # 马
+  - char: C4EA  # 年
+  - char: C8FE  # 叁
+  - char: D4C2  # 月

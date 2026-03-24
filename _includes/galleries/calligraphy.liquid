@@ -15,166 +15,54 @@
   </div>
   <div class="illustration-section">
     <div class="marquee-section">
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:normal">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:normal">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
+      {% assign items = site.data.gallery_logos['column10'] %}
+      <div class="logo-marquee-track-time" style="--direction:normal;">
+        {% for logo in items %}
+          <div
+            class="logo-marquee-item-time"
+            style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
+            aria-hidden="true"
+          ></div>
+        {% endfor %}
       </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
+
+      {% assign columns = "column9,column8,column7,column6,column5,column4,column3,column2" | split: "," %}
+      {% for col in columns %}
+        {% assign items = site.data.gallery_logos[col] %}
+        <div class="logo-marquee logo-marquee-vertical">
+          <div class="logo-marquee-track" style="--direction:normal;">
+            {% for logo in items %}
+              <div
+                class="logo-marquee-item"
+                style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
+                aria-hidden="true"
+              ></div>
+            {% endfor %}
+          </div>
+
+          <div aria-hidden="true" class="logo-marquee-track" style="--direction:normal;">
+            {% for logo in items %}
+              <div
+                class="logo-marquee-item"
+                style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
+                aria-hidden="true"
+              ></div>
+            {% endfor %}
+          </div>
         </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
+      {% endfor %}
+      
+      {% assign items = site.data.gallery_logos['column1'] %}
+      <div class="logo-marquee-track-title" style="--direction:normal;">
+        {% for logo in items %}
+          <div
+            class="logo-marquee-item"
+            style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
+            aria-hidden="true"
+          ></div>
+        {% endfor %}
       </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:normal;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:normal;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:normal;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:normal;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:normal;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:normal;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="logo-marquee logo-marquee-vertical">
-        <div class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-        <div aria-hidden class="logo-marquee-track" style="--direction:reverse;">
-          {% for logo in site.data.gallery_logos %}
-            <div 
-              class="logo-marquee-item",
-              style="--icon-url: url('{{ logo.file | relative_url }}');",
-              aria-hidden="true",
-            ></div>
-          {% endfor %}
-        </div>
-      </div>
+
     </div>
   </div>
 
