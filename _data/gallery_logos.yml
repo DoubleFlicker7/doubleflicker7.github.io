@@ -1,62 +1,96 @@
-- name: CEE4
-  file: /assets/img/galleries/calligraphy/CEE4.svg
+poem:
+  - column:
+    - char: CBAE  # 水
+    - char: B5F7  # 调
+    - char: B8E8  # 歌
+    - char: CDB7  # 头
+    - char: B7    # ·
+    - char: C3F7  # 明
+    - char: D4C2  # 月
+    - char: BCB8  # 几
+    - char: CAB1  # 时
+    - char: D3F0  # 有
 
-- name: CEE4
-  file: /assets/img/galleries/calligraphy/CEE4.svg
+  - column:
+    - char: CCEC  # 天
+    - char: BDAB  # 上
+    - char: B5F6  # 琼
+    - char: C1EE  # 楼
+    - char: D2CE  # 又
+    - char: BFC6  # 恐
+    - char: C8AB  # 琼
+    - char: D3F1  # 楼
+    - char: D3F0  # 玉
+    - char: D3F1  # 宇
+    - char: B8DF  # 高
+    - char: B4E4  # 处
+    - char: B2BB  # 不
+    - char: CADC  # 胜
+    - char: BAAE  # 寒
 
-- name: CEE4
-  file: /assets/img/galleries/calligraphy/CEE4.svg
+  - column:
+    - char: CEE6  # 起
+    - char: CEE4  # 舞
+    - char: C7E0  # 弄
+    - char: C7E5  # 清
+    - char: D3B0  # 影
+    - char: BACE  # 何
+    - char: B4F4  # 似
+    - char: D4DA  # 在
+    - char: C8CB  # 人
+    - char: BCE4  # 间
 
-- name: CEE4
-  file: /assets/img/galleries/calligraphy/CEE4.svg
+  - column:
+    - char: D7AA  # 转
+    - char: D8BC  # 朱
+    - char: B8F3  # 阁
+    - char: B5E5  # 低
+    - char: C6CC  # 绮
+    - char: BBA7  # 户
+    - char: D5DC  # 照
+    - char: CEDE  # 无
+    - char: C3DF  # 眠
 
-- name: CEE4
-  file: /assets/img/galleries/calligraphy/CEE4.svg
+  - column:
+    - char: B2BB  # 不
+    - char: D3FB  # 应
+    - char: D3D0  # 有
+    - char: BAE3  # 恨
+    - char: BACE  # 何
+    - char: CAB1  # 事
+    - char: B3FB  # 长
+    - char: CFE2  # 向
+    - char: B1F0  # 别
+    - char: CAB1  # 时
+    - char: D4B2  # 圆
 
+  - column:
+    - char: C8CB  # 人
+    - char: D3EB  # 有
+    - char: B1F6  # 悲
+    - char: B9AB  # 欢
+    - char: C0EB  # 离
+    - char: BACF  # 合
+    - char: D4C2  # 月
+    - char: D3D0  # 有
+    - char: D2F6  # 阴
+    - char: C7E5  # 晴
+    - char: D4C2  # 圆
+    - char: B4F5  # 缺
+    - char: B4CE  # 此
+    - char: CAE7  # 事
+    - char: C4CF  # 古
+    - char: C4DC  # 难
+    - char: C8AB  # 全
 
-- name: C1D6
-  file: /assets/img/galleries/calligraphy/C1D6.svg
-
-- name: C1D6
-  file: /assets/img/galleries/calligraphy/C1D6.svg
-
-- name: C1D6
-  file: /assets/img/galleries/calligraphy/C1D6.svg
-
-- name: C1D6
-  file: /assets/img/galleries/calligraphy/C1D6.svg
-
-- name: C1D6
-  file: /assets/img/galleries/calligraphy/C1D6.svg
-
-
-- name: CDFB
-  file: /assets/img/galleries/calligraphy/CDFB.svg
-
-- name: CDFB
-  file: /assets/img/galleries/calligraphy/CDFB.svg
-
-- name: CDFB
-  file: /assets/img/galleries/calligraphy/CDFB.svg
-
-- name: CDFB
-  file: /assets/img/galleries/calligraphy/CDFB.svg
-
-- name: CDFB
-  file: /assets/img/galleries/calligraphy/CDFB.svg
-
-
-- name: CEE8
-  file: /assets/img/galleries/calligraphy/CEE8.svg
-
-- name: CEE8
-  file: /assets/img/galleries/calligraphy/CEE8.svg
-
-- name: CEE8
-  file: /assets/img/galleries/calligraphy/CEE8.svg
-
-- name: CEE8
-  file: /assets/img/galleries/calligraphy/CEE8.svg
-
-- name: CEE8
-  file: /assets/img/galleries/calligraphy/CEE8.svg
+  - column:
+    - char: B4BA  # 但
+    - char: D4B8  # 愿
+    - char: C8CB  # 人
+    - char: B3A4  # 长
+    - char: BEC3  # 久
+    - char: C0CB  # 千
+    - char: C0EF  # 里
+    - char: B9B2  # 共
+    - char: B2FB  # 婵
+    - char: BEFB  # 娟
