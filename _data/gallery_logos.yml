@@ -1,9 +1,3 @@
-column1:
-  - char: CBAE  # 水
-  - char: B5F7  # 调
-  - char: B8E8  # 歌
-  - char: CDB7  # 头
-
 column2:
   - char: C3F7  # 明
   - char: D4C2  # 月
@@ -116,8 +110,14 @@ column9:
   - char: BEEA  # 娟
   
 column10:
+  - char: CBAE  # 水
+  - char: B5F7  # 调
+  - char: B8E8  # 歌
+  - char: CDB7  # 头
+  - char: Blank
   - char: CEE7  # 午
   - char: C2ED  # 马
   - char: C4EA  # 年
   - char: C8FE  # 叁
   - char: D4C2  # 月
+  - char: Blank

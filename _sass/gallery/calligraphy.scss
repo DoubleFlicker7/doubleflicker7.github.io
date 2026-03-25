@@ -57,7 +57,7 @@
   align-items: center;
   justify-content: flex-start;
   // gap: 0.75rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .logo-marquee {
@@ -65,7 +65,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
 
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -93,7 +93,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   // gap: 1rem;
 
   animation: scrollVertical 60s linear infinite;
@@ -102,6 +102,9 @@
 
 .logo-marquee-track-time {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-marquee-item {
@@ -125,7 +128,7 @@
 
 .logo-marquee-item-time {
   flex: 0 0 auto;
-  width: 20px;
+  width: 30px;
   // background-color: rgba(255, 0, 0, 0.212);
   text-align: center;
   align-content: center;
@@ -142,13 +145,13 @@
   mask-size: contain;
 }
 
-.logo-marquee-item-title {
+.logo-marquee-item-seal {
   flex: 0 0 auto;
   width: 20px;
   // background-color: rgba(255, 0, 0, 0.212);
   text-align: center;
   align-content: center;
-  background-color: rgb(from currentColor r g b / 30%);
+  background-color: rgba(255, 0, 0, 0.3);
   transition: background-color 0.25s ease;
 
   -webkit-mask-image: var(--icon-url);
@@ -171,6 +174,10 @@
 
 .logo-marquee-item-time:hover {
   background-color: var(--global-text-color);
+}
+
+.logo-marquee-item-seal:hover {
+  background-color: rgb(255, 0, 0);
 }
 
 @keyframes scrollVertical {

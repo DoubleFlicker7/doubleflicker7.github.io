@@ -25,6 +25,12 @@
             aria-hidden="true"
           ></div>
         {% endfor %}
+        <div
+          class="logo-marquee-item-seal"
+          data-svg="{{ '/assets/img/galleries/calligraphy/Seal.svg' | relative_url }}"
+          style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/Seal.svg' | relative_url }}');"
+          aria-hidden="true"
+          ></div>
       </div>
 
       {% assign columns = "column9,column8,column7,column6,column5,column4,column3,column2" | split: "," %}
@@ -54,18 +60,6 @@
           </div>
         </div>
       {% endfor %}
-      
-      {% assign items = site.data.gallery_logos['column1'] %}
-      <div class="logo-marquee-track-title" style="--direction:normal;">
-        {% for logo in items %}
-          <div
-            class="logo-marquee-item-title"
-            data-svg="{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}"
-            style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
-            aria-hidden="true"
-          ></div>
-        {% endfor %}
-      </div>
 
     </div>
   </div>
@@ -95,7 +89,7 @@
     return { width, height };
   }
 
-  async function applySvgHeight(el, targetWidth = 35) {
+  async function applySvgHeight(el) {
     const url = el.dataset.svg;
     if (!url) return;
 
@@ -103,8 +97,10 @@
       const { width, height } = await getSvgSize(url);
       if (!width || !height) return;
 
+      const targetWidth = el.getBoundingClientRect().width;
+      if (!targetWidth) return;
+
       const targetHeight = targetWidth * height / width;
-      el.style.width = `${targetWidth}px`;
       el.style.height = `${targetHeight}px`;
     } catch (err) {
       console.error("Failed to load SVG size:", url, err);
@@ -113,11 +109,11 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
     const items = document.querySelectorAll(
-      ".logo-marquee-item, .logo-marquee-item-time"
+      ".logo-marquee-item, .logo-marquee-item-time, .logo-marquee-item-seal"
     );
 
     await Promise.all(
-      Array.from(items).map(el => applySvgHeight(el, 35))
+      Array.from(items).map(el => applySvgHeight(el))
     );
   });
 </script>
