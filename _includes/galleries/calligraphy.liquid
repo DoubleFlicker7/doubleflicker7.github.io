@@ -20,6 +20,7 @@
         {% for logo in items %}
           <div
             class="logo-marquee-item-time"
+            data-svg="{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}"
             style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
             aria-hidden="true"
           ></div>
@@ -34,6 +35,7 @@
             {% for logo in items %}
               <div
                 class="logo-marquee-item"
+                data-svg="{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}"
                 style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
                 aria-hidden="true"
               ></div>
@@ -44,6 +46,7 @@
             {% for logo in items %}
               <div
                 class="logo-marquee-item"
+                data-svg="{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}"
                 style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
                 aria-hidden="true"
               ></div>
@@ -56,7 +59,8 @@
       <div class="logo-marquee-track-title" style="--direction:normal;">
         {% for logo in items %}
           <div
-            class="logo-marquee-item"
+            class="logo-marquee-item-title"
+            data-svg="{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}"
             style="--icon-url: url('{{ '/assets/img/galleries/calligraphy/' | append: logo.char | append: '.svg' | relative_url }}');"
             aria-hidden="true"
           ></div>
@@ -68,3 +72,52 @@
 
 </section>
 
+<script>
+  async function getSvgSize(url) {
+    const res = await fetch(url);
+    const text = await res.text();
+
+    const doc = new DOMParser().parseFromString(text, "image/svg+xml");
+    const svg = doc.documentElement;
+
+    let width = svg.getAttribute("width");
+    let height = svg.getAttribute("height");
+
+    if ((!width || !height) && svg.hasAttribute("viewBox")) {
+      const parts = svg.getAttribute("viewBox").trim().split(/\s+/).map(Number);
+      width = parts[2];
+      height = parts[3];
+    } else {
+      width = parseFloat(width);
+      height = parseFloat(height);
+    }
+
+    return { width, height };
+  }
+
+  async function applySvgHeight(el, targetWidth = 35) {
+    const url = el.dataset.svg;
+    if (!url) return;
+
+    try {
+      const { width, height } = await getSvgSize(url);
+      if (!width || !height) return;
+
+      const targetHeight = targetWidth * height / width;
+      el.style.width = `${targetWidth}px`;
+      el.style.height = `${targetHeight}px`;
+    } catch (err) {
+      console.error("Failed to load SVG size:", url, err);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    const items = document.querySelectorAll(
+      ".logo-marquee-item, .logo-marquee-item-time"
+    );
+
+    await Promise.all(
+      Array.from(items).map(el => applySvgHeight(el, 35))
+    );
+  });
+</script>
