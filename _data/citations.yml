@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-24'
+  last_updated: '2026-05-7'
 papers:
   Up_a2VAAAAAJ:u-x6o8ySG0sC:
-    citations: 52
+    citations: 59
     title: Rethinking Boundary Discontinuity Problem for Oriented Object Detection
     year: 2024
   Up_a2VAAAAAJ:W7OEmFMy1HYC:
-    citations: 3
+    citations: 5
     title: GUI-ReWalk Massive Data Generation for GUI Agent via Stochastic Exploration and Intent-Aware Reasoning
     year: 2025
   
