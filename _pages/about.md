@@ -30,7 +30,7 @@ educations:
   limit: 3
 ---
 
-<p><strong>Ph.D. Student</strong></p>
+<p><strong>Ph.D. Candidate</strong></p>
 <p><strong>Institute of Computing Technology, University of Chinese Academy of Sciences</strong></p>
 <p><strong>No. 6, South Academy Road, Haidian, Beijing. (100190)</strong></p>
 <p>
