@@ -196,6 +196,7 @@ exclude:
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
+  - assets/jupyter/
   - lighthouse_results/
   - package.json
   - package-lock.json
